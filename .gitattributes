@@ -1,0 +1,8 @@
+*.dart linguist-language=Dart
+
+android/CMakeLists.txt linguist-vendored
+android/app/CMakeLists.txt linguist-vendored
+android/.cxx/** linguist-vendored
+android/app/src/main/cpp/** linguist-vendored
+
+web/** linguist-vendored
