@@ -44,9 +44,21 @@ class HomeActivity extends StatelessWidget {
   }
 }
 
-class HeroDetailPage  extends StatelessWidget{
+class HeroDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("Hero Detail Page"),),);
+    return Scaffold(
+      appBar: AppBar(title: Text("Hero Detail Page")),
+      body: Center(
+        child: Hero(
+          tag: "hero-demo",
+          child: Icon(
+            CupertinoIcons.star,
+            color: Colors.blue,
+            size: 100,
+          ),
+        ),
+      ),
+    );
   }
 }
